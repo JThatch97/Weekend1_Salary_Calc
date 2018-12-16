@@ -5,7 +5,7 @@ $('#submit').on('click', addEmployee)
 };
 
 function addEmployee(){
-$('#employeeList').append('<li></li>');
+$('#employeeList').append();
 };
 
 class Employee {

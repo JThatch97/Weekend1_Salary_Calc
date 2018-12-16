@@ -1,11 +1,7 @@
 $(document).ready(readyNow);
-
+let val = $('#textbox').val();
 function readyNow(){
-$('#submit').on('click', addEmployee)
-};
-
-function addEmployee(){
-$('#employeeList').append();
+    $('#employeeList').append('<li>'+val+'</li>');
 };
 
 class Employee {
@@ -17,3 +13,4 @@ class Employee {
         this.annualSalary = annualSalary;
     }
 };
+

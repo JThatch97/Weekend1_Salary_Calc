@@ -1,5 +1,13 @@
 $(document).ready(readyNow);
 
+function readyNow(){
+$('#submit').on('click', addEmployee)
+};
+
+function addEmployee(){
+$('#employeeList').append('<li></li>');
+};
+
 class Employee {
     constructor(firstName, lastName, employeeId, employeeTitle, annualSalary){
         this.firstName = firstName;
@@ -8,8 +16,4 @@ class Employee {
         this.employeeTitle = employeeTitle;
         this.annualSalary = annualSalary;
     }
-};
-
-function readyNow(){
-    
 };
